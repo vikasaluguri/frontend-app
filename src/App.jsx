@@ -1,0 +1,21 @@
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+import Login from "./components/login";
+import Register from "./components/register";
+import Cart from "./components/cart";
+import Orders from "./components/Orders";
+function App() {
+  return (
+    <div>
+      <Header />
+      <Content />
+      <Login />
+      <Register />
+      <Cart />
+      <Orders />
+      <Footer />
+    </div>
+  );
+}
+export default App;
