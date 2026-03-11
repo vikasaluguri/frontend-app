@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./Content.css";
-const API_URL = import.meta.env.VITE_API_URL;
+import "./Content.css"
+
+const API_URL = import.meta.env.VITE_API_URL
+
 function Content() {
   // const [count, setCount] = useState(0);
   const [products, setProducts] = useState([]);
@@ -20,16 +22,16 @@ function Content() {
     fetchProducts();
   }, []);
   return (
-    <div >
-      <h3>Products Page</h3>
+    <div>
+     
       {/* <button onClick={decrement}>-</button>
       {count}
-      <button onClick={increment}>+</button> */}
-      <hr />
+      <button onClick={increment}>+</button>
+      <hr /> */}
       <div className="row">
         {products.map((product) => (
           <div className="box">
-            <img src={`https://backend-app-z2t4.onrender.com/${product.imageUrl}`} width='300px' alt="" />
+            <img src={`${API_URL}/${product.imageUrl}`} width="300px" alt="" />
             <h3>{product.name}</h3>
             <p>{product.desc}</p>
             <h4>{product.price}</h4>

@@ -10,10 +10,10 @@ function App() {
     <div>
       <Header />
       <Content />
-      <Login />
-      <Register />
-      <Cart />
-      <Orders />
+      <Login/>
+      <Register/>
+      <Cart/>
+      <Orders/>
       <Footer />
     </div>
   );
